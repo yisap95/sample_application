@@ -30,7 +30,7 @@ module SessionsHelper
     !current_user.nil?
   end
   
-  #forgets a persisten session
+  #forgets a persistent session
     def forget(user)
     user.forget
     cookies.delete(:user_id)
